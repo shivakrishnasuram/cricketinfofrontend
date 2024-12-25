@@ -92,6 +92,7 @@ function RegistrationPage() {
                             Register
                         </Button>
                         <Link to="/login" className="text-decoration-none pt-20">Already have an account? <span>login?</span></Link>
+                                <Link to ="/Cards"> skip registration </Link>
 
                     </Form>
                 </Col>

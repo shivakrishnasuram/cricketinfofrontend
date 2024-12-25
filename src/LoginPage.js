@@ -22,6 +22,7 @@ function LoginPage() {
 
         if (user && (await bcrypt.compare(formData.password, user.password))) {
             setMessage("Login successful!");
+            alert("login successfull!");
             localStorage.setItem("loggedInUser", JSON.stringify(user));
             setTimeout(() => navigate("/Cards"), 1000); // Redirect after 1 second
         } else {
